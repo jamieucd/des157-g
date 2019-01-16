@@ -11,7 +11,7 @@ body {
 }
 
 a:link {
-  color: blue;
+  color: white;
 }
 
 a:visited {
@@ -30,27 +30,34 @@ a {
   text-decoration: none;
 }
 
-div h1 {
+ h1 {
+  font-family: 'Raleway', sans-serif;
   font-size: 50px;
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 1rem;
-  border-radius: 20px;
-  border-style: dotted;
-  border-width: thin;
 }
 
 
 section h2 {
-  padding-left: 30px;
-  font-family: Century, sans-serif;
+  font-family: 'Cabin', sans-serif;
+
+}
+
+ul li {
+  font-size: 17px;
+  font-family: 'Sarabun', sans-serif;
+}
+
+ol li {
+  font-size: 17px;
+  font-family: 'Sarabun', sans-serif;
 }
 
 footer {
-  background-color: rgb(135,206,235);
+  background-color: rgb(234, 132, 117);
   position: fixed;
   margin-top: 36px;
   left: 0;
