@@ -1,0 +1,77 @@
+
+header {
+  font-family: avenir;
+  font-size: 25px;
+}
+
+body {
+  display: grid;
+  width: 65%;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+
+h2{
+  font-family: avenir;
+  font-size: 30px;
+}
+
+p {
+  font-family: avenir;
+}
+
+.logo {
+  position:absolute;
+left:40px;
+top:57px;
+}
+
+section img {
+position: relative;
+padding-left: 30px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+  background-color: rgb(234, 132, 117);
+  position: fixed;
+  padding: 4px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer ul li a {
+  color: white;
+  font-family: 'Sarabun', sans-serif;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: pink;
+}
+
+a:active {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
