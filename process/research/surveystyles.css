@@ -1,4 +1,27 @@
+body {
+  width: 100%;
+  margin: auto;
+  padding-left: 20vw;
+  padding-top: 90px;
+  }
 
+.surveylogo {
+  position:relative;
+  left:0px;
+  top:0px;
+    width: 40%;
+  }
+
+h2 {
+  font-family: avenir;
+  font-size: 30px;
+}
+
+ol li {
+  font-size:18px;
+  /* font-family: 'Sarabun', sans-serif; */
+    font-family: avenir;
+}
 
 a:link {
   color: white;
