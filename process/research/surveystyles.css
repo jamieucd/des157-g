@@ -23,22 +23,21 @@ ol li {
     font-family: avenir;
 }
 
-a:link {
+:link {
   color: white;
 }
 
-a:visited {
+/* a:visited {
   color: black;
-}
+} */
 
 a:hover {
   color: pink;
 }
 
 a:active {
-  color: white;
+  color: pink;
 }
-
 a {
   text-decoration: none;
 }

@@ -1,8 +1,9 @@
 
-header {
-  font-family: avenir;
-  font-size: 25px;
-}
+.analysislogo {
+  position:relative;
+  left:0px;
+  top:25px;
+  }
 
 body {
   display: grid;
@@ -11,6 +12,8 @@ body {
   padding-top: 10px;
   padding-bottom: 60px;
 }
+
+
 
 h2{
   font-family: avenir;
@@ -60,16 +63,16 @@ a:link {
   color: white;
 }
 
-a:visited {
+/* a:visited {
   color: black;
-}
+} */
 
 a:hover {
   color: pink;
 }
 
 a:active {
-  color: white;
+  color: pink;
 }
 
 a {
