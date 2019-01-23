@@ -1,13 +1,13 @@
 body {
   width: 800px;
   margin: auto;
-  padding: 2vw;
+  padding: 1vw;
 }
 
 #mySketch {
   /* background-color: #76b5a4; */
   height: 250px;
-  padding: 1px;
+  padding: 2px;
 }
 
 a:link {
@@ -23,7 +23,7 @@ a:hover {
 }
 
 a:active {
-  color: red;
+  color: black;
 }
 
 a {
@@ -32,8 +32,9 @@ a {
 }
 
  h1 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 50px;
+  font-family: avenir;
+  font-size: 70px;
+  margin:20px;
 }
 
 main {
@@ -43,7 +44,7 @@ main {
 
 
 section h2 {
-  font-family: 'Cabin', sans-serif;
+  font-family: avenir;
 
 }
 
