@@ -7,14 +7,16 @@ h2 {
   min-width: 200px;
   margin-left: 15%;
   font-family: Lora;
-  font-size: 37px;
+  font-size: 32px;
   color: rgb(229, 0, 91);
 }
 
 section {
   font-family: avenir;
+  font-size: 15px;
   margin-left: 15%;
-  padding: 1em;
+   padding-top: 5px;
+   padding-left: 1em;
   background-color: rgb(197, 207, 216);
   width: 70%;
 }
@@ -27,8 +29,10 @@ fieldset {
   border: 0;
   margin-bottom: 0;
 }
-div  {
-  padding-bottom: 2px;
+
+
+section form div {
+  padding: 10px;
 }
 
 a:link {
