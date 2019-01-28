@@ -10,15 +10,16 @@
 </head>
 
 <body>
-  <h1>Madlib Movie</h1>
+  <h2>Madlib Movie</h2>
   <section>
     <form>
-
-      <label for="choose">Choose your genre: </label><br>
-      <input type="radio" name="comedy" /> Comedy
-      <input type="radio" name="romantic" /> Romantic
-      <input type="radio" name="horror"  /> Horror
-      <input type="radio" name="action" /> Action
+      <div>
+        <label for="choose">Choose your genre: </label><br>
+        <input type="radio" name="choose" value="comedy" checked> Comedy
+        <input type="radio" name="choose" value="romantic"> Romantic
+        <input type="radio" name="choose" value="horror"> Horror
+        <input type="radio" name="choose" value="action"> Action
+      </div>
 
       <fieldset>
         <label for="name">What's your name?</label><br>
@@ -51,11 +52,13 @@
       </fieldset>
 
       <label for="airPods">Do you have airPods: </label>
-      <input type="radio" name="Yes" /> Yes
-      <input type="radio" name="No" /> No<br>
-      <input type="submit" value="submit" id="submit">
-      <input type="reset" value="reset" id="reset">
+      <input type="radio" name="airPods" value="yes"> Yes
+      <input type="radio" name="airPods" value="no"> No<br>
 
+      <div>
+        <input type="submit" value="submit" id="submit">
+        <input type="reset" value="reset" id="reset">
+      </div>
 
     </form>
   </section>
