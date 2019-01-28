@@ -15,13 +15,13 @@
     <form>
 
       <label for="choose">Choose your genre: </label><br>
-      <input type="radio" name="comedy" /> Comedy
-      <input type="radio" name="Romantic" /> Romantic
-      <input type="radio" name="Horror" /> Horror
-      <input type="radio" name="savory" /> Action
+      <input type="radio" name="comedy" id="choose"/> Comedy
+      <input type="radio" name="romantic" id="choose"/> Romantic
+      <input type="radio" name="horror" id="choose" /> Horror
+      <input type="radio" name="action" id="choose"/> Action
 
       <fieldset>
-        <label for="name">What's your name? </label><br>
+        <label for="name">What's your name?</label><br>
         <input type="text" name="name" id="name" required>
       </fieldset>
 
@@ -32,7 +32,7 @@
 
       <fieldset>
         <label for="favActor">Name your favorite actor/actress? </label><br>
-        <input type="text" name="favColor" id="favColor" required>
+        <input type="text" name="favActor" id="favActor" required>
       </fieldset>
 
       <fieldset>
@@ -51,8 +51,8 @@
       </fieldset>
 
       <label for="airPods">Do you have airPods: </label>
-      <input type="radio" name="Yes" /> Yes
-      <input type="radio" name="No" /> No<br>
+      <input type="radio" name="Yes" id="airPods"/> Yes
+      <input type="radio" name="No" id="airPods"/> No<br>
       <input type="submit" value="submit" id="submit">
       <input type="reset" value="reset" id="reset">
 
