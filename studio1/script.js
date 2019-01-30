@@ -35,6 +35,6 @@ console.log('favArtist: ' + favArtist);
 // }
 
   var myMsg = document.querySelector('#myMsg');
-  document.getElementById("myMsg").innerHTML= ''
+  document.getElementById("myMsg").innerHTML= In this film adaption about the life of ' + noun + 'collector, we follow the main character ' + petName + ' played by ' + favArtist + 'as they ' + verb + 'through the obstacles of life as a ' + adj + 'paleontologist';
 evt.preventDefault();
 }
