@@ -37,11 +37,11 @@ div {
     border: 0; /* remove default */
     margin-bottom: 0;
 }
-input[type="radio"]{
+/* input[type="radio"]{
   -webkit-appearance: none
-}
+} */
 
-.hide {
+#myMsg {
   grid-column: 2;
   width: 50%;
   color: white;
