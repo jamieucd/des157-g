@@ -1,39 +1,52 @@
 body {
   width: 100%;
   margin: auto;
+  background:rgb(70, 70, 70);
 }
 
-h2 {
+h1 {
   min-width: 200px;
-  margin-left: 15%;
-  font-family: Lora;
-  font-size: 32px;
-  color: rgb(229, 0, 91);
+  margin-top: 20px;
+  margin-left: 11%;
+  margin-bottom: -0.10em;
+  font-family: Budmo;
+  font-size: 85px;
+  /* color: rgb(206, 18, 59); */
+  color: rgb(255, 88, 76);
 }
 
-section {
+#formSection {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
   font-family: avenir;
   font-size: 15px;
-  margin-left: 15%;
-   padding-top: 5px;
-   padding-left: 1em;
-  background-color: rgb(197, 207, 216);
-  width: 70%;
+  color:white;
+  margin-left: 11%;
+  width:80%;
+   padding:2%;
+  background-color: rgb(130, 130, 130);
+
 }
 
-fieldset {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
+div {
   justify-content: center;
-  width: 90%;
-  border: 0;
-  margin-bottom: 0;
+    grid-gap: 1%;
+    width: 90%;
+  padding:8px;
+    border: 0; /* remove default */
+    margin-bottom: 0;
+}
+input[type="radio"]{
+  -webkit-appearance: none
 }
 
-
-section form div {
-  padding: 10px;
+.hide {
+  grid-column: 2;
+  width: 50%;
+  color: white;
 }
+
 
 a:link {
   color: white;
@@ -56,10 +69,11 @@ a {
 }
 
 footer {
-  background-color: rgb(34, 55, 68);
+  /* background-color: rgb(229, 0, 91); */
+  background-color:black;
   /* background-color: rgb(234, 132, 117); */
   position: fixed;
-  margin-top: 36px;
+  margin-top: 40px;
   left: 0;
   bottom: 0;
   width: 100%;

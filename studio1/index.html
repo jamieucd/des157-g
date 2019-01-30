@@ -1,61 +1,69 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <title>Studio 1</title>
-  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
+  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Lora:700" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+
 </head>
 
 <body>
-  <h2>Madlib Movie</h2>
-  <section>
+  <header>
+    <h1>Madlib Movie</h1>
+  </header>
+
+  <section id="formSection">
     <form>
-
       <h4>Choose your genre: </h4>
-      <input type="radio" name="choose" value="comedy" checked> Comedy
-      <input type="radio" name="choose" value="romantic"> Romantic
-      <input type="radio" name="choose" value="horror"> Horror
-      <input type="radio" name="choose" value="action"> Action
+      <div>
+        <input type="radio" id="comedy" name="genre" value="comedy" checked>
+        <label for="comedy">Comedy</label>
+        <input type="radio" id="romantic" name="genre" value="romantic">
+        <label for="romantic">Romantic</label>
+        <input type="radio" id="horror" name="genre" value="horror">
+        <label for="horror">Horror</label>
+        <input type="radio" id="action" name="genre" value="action">
+        <label for="action">Action</label>
+      </div>
 
+      <div>
+        <label for="noun">Give me a Noun</label><br>
+        <input type="text" name="noun" id="noun" required>
+      </div>
 
-      <fieldset>
-        <label for="ranName">Write a random name.</label><br>
-        <input type="text" name="ranName" id="ranName" required>
-      </fieldset>
+      <div>
+        <label for="adj">Give me an Adjective! </label><br>
+        <input type="text" name="adj" id="adj" required>
+      </div>
 
-      <fieldset>
-        <label for="favActor">Name your favorite actor/actress? </label><br>
-        <input type="text" name="favActor" id="favActor" required>
-      </fieldset>
+      <div>
+        <label for="verb">Give me a Verb!</label><br>
+        <input type="text" name="verb" id="verb" required>
+      </div>
 
-      <fieldset>
-        <label for="skill">Name an activity. </label><br>
-        <input type="text" name="skill" id="skill" required>
-      </fieldset>
+      <div>
+        <label for="petName">What is your pet's name? </label><br>
+        <input type="text" name="petName" id="petName" required>
+      </div>
 
-      <fieldset>
-        <label for="loc">What city do you love? </label><br>
-        <input type="text" name="loc" id="loc" required>
-      </fieldset>
-
-      <fieldset>
-        <label for="music">Who's your favorite music artist? </label><br>
-        <input type="text" name="music" id="music" required>
-      </fieldset>
-
-      <h4>Do you have AirPods?</h4>
-      <input type="radio" name="airPods" value="yes"> Yes
-      <input type="radio" name="airPods" value="no"> No<br>
+      <div>
+        <label for="favArtist">Who's your favorite music artist? </label><br>
+        <input type="text" name="favArtist" id="favArtist" required>
+      </div>
 
       <div>
         <input type="submit" value="submit" id="submit">
         <input type="reset" value="reset" id="reset">
       </div>
-
     </form>
+  </section>
+
+  <!-- Madlib response here -->
+  <section id="msgSection" class="hide">
+    <p id="myMsg"></p>
   </section>
 
   <footer>
