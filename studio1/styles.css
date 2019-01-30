@@ -40,7 +40,8 @@ form {
   font-family: avenir;
   font-size: 17px;
   color:white;
-  margin-top: 5%;
+  width: auto;
+  /* margin-top: 5%; */
   margin-left: 17%;
 background-color: rgb(130, 130, 130);
 }
@@ -59,7 +60,7 @@ left: 33%;
 
 #msgSection{
   padding: 4em;
-  width:70%;
+  width:80%;
   font-family: rockwell;
   justify-content: center;
   font-kerning: auto;
