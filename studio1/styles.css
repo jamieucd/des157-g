@@ -19,7 +19,7 @@ body {
 header {
   font-family: Budmo;
   margin-left: auto;
-  margin-bottom: -5%;
+
   min-width: 200px;
   font-size:40px;
   color: rgb(255, 88, 76);
@@ -40,6 +40,7 @@ form {
   font-family: avenir;
   font-size: 17px;
   color:white;
+  margin-top: 5%;
   margin-left: 17%;
 background-color: rgb(130, 130, 130);
 }
@@ -58,7 +59,7 @@ left: 33%;
 
 #msgSection{
   padding: 4em;
-  width:60%;
+  width:70%;
   font-family: rockwell;
   justify-content: center;
   font-kerning: auto;
