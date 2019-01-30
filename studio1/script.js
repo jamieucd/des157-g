@@ -1,40 +1,22 @@
 
 'use strict';
-document.querySelector('#submit').addEventListener('submit', processForm);
-document.querySelector('#restart').addEventListener('click', resetForm);
-function processForm(evt) {
 
-//   // //declare variables
-var petName = document.querySelector('#petName').value;
-console.log('petName: ' + petName);
-var noun = document.querySelector('#noun').value;
-console.log('noun: ' + noun);
-var adj = document.querySelector('#adj').value;
-console.log('adj: ' + adj);
-var verb = document.querySelector('#verb').value;
-console.log('verb: ' + verb);
-var favArtist = document.querySelector('#favArtist').value;
-console.log('favArtist: ' + favArtist);
-// var comedy = document.querySelector('#comedy');
-// console.log('comedy: ' + comedy);
-// var romantic = document.querySelector('#romantic');
-// console.log('romantic: ' + romantic);
-// var horror = document.querySelector('#horror');
-// console.log('horror: ' + horror);
-// var action = document.querySelector('#action');
-// console.log('action: ' + action);
-//
-// if (response == "comedy") {
-//   my.innerhtml = 'In this film adaption about the life of ' + noun + 'collector\, we follow the main character ' + petName + ' played by ' + favArtist + 'as they ' + verb + 'through the obstacles of life as a ' + adj + 'paleontologist.';
-// } else if (response == "romantic") {
-//   myMsg.innerHTML = 'In this film adaption about the life of ' + noun + 'collector, we follow the main character ' + petName + ' played by ' + favArtist + 'as they ' + verb + 'through the obstacles of life as a ' + adj + 'paleontologist.';
-// } else if (response == "horror") {
-//   myMsg.innerHTML = 'In this film adaption about the life of ' + noun + 'collector\, we follow the main character ' + petName + ' played by ' + favArtist + 'as they ' + verb + 'through the obstacles of life as a ' + adj + 'paleontologist.';
-// } else {
-//   myMsg.innerHTML = 'In this film adaption about the life of ' + noun + 'collector\, we follow the main character ' + petName + ' played by ' + favArtist + 'as they ' + verb + 'through the obstacles of life as a ' + adj + 'paleontologist.';
-// }
+document.querySelector('#s').addEventListener('click', processForm);
 
-  var myMsg = document.querySelector('#myMsg');
-  document.getElementById("myMsg").innerHTML= In this film adaption about the life of ' + noun + 'collector, we follow the main character ' + petName + ' played by ' + favArtist + 'as they ' + verb + 'through the obstacles of life as a ' + adj + 'paleontologist';
-evt.preventDefault();
-}
+function processForm(evt){
+
+  var name = document.querySelector('#name').value;
+  var genre = document.querySelector('#genre').value;
+  var lead = document.querySelector('#lead').value;
+  var adj = document.querySelector('#adj').value;
+  var emo = document.querySelector('#emo').value;
+  var favArtist = document.querySelector('#favArtist').value;
+
+    var myMsg=document.querySelector('#myMsg');
+
+    myMsg.innerHTML= 'Congratulation on the release of your movie '+name+'! According to New York Times review, it is one of the hottest '+genre+' movies of the year! Starring '+lead +' as the lead character in this '+adj+' movie that will leave audiences feeling '+emo+'! Produced, written, choreographed, and scored by '+favArtist+'.';
+msgSection.className='show';
+
+    evt.preventDefault();
+    return false;
+  }

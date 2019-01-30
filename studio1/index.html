@@ -14,10 +14,13 @@
   <header>
     <h1>Madlib Movie</h1>
   </header>
+<main id="formSection">
+  <section >
 
-  <section id="formSection">
+
+
     <form>
-      <h4>Choose your genre: </h4>
+      <!-- <h4>Choose your genre: </h4>
       <div>
         <input type="radio" id="comedy" name="genre" value="comedy" checked>
         <label for="comedy">Comedy</label>
@@ -27,44 +30,68 @@
         <label for="horror">Horror</label>
         <input type="radio" id="action" name="genre" value="action">
         <label for="action">Action</label>
+      </div> -->
+
+      <!-- <div>
+        <label for="select">Choose a genre:</label>
+
+    <select name="select">
+          <option value="comedy">Comedy</option>
+          <option value="romantic">Romantic</option>
+          <option value="horror">Horror</option>
+          <option value="action">Action</option>
+        </select>
+      </div> -->
+      <div>
+        <label for="name">Title of your Movie</label><br>
+        <input type="text" name="name" id="name" required>
       </div>
 
       <div>
-        <label for="noun">Give me a Noun</label><br>
-        <input type="text" name="noun" id="noun" required>
+        <label for="genre">Genre</label><br>
+        <input type="text" name="genre" id="genre" required>
       </div>
 
       <div>
-        <label for="adj">Give me an Adjective! </label><br>
+        <label for="lead">Name an actor/actress to play the lead!</label><br>
+        <input type="text" name="lead" id="lead" required>
+      </div>
+
+      <div>
+        <label for="adj">Give an adjective!</label><br>
         <input type="text" name="adj" id="adj" required>
       </div>
 
       <div>
-        <label for="verb">Give me a Verb!</label><br>
-        <input type="text" name="verb" id="verb" required>
+        <label for="emo">emotion? </label><br>
+        <input type="text" name="emo" id="emo" required>
       </div>
 
       <div>
-        <label for="petName">What is your pet's name? </label><br>
-        <input type="text" name="petName" id="petName" required>
-      </div>
-
-      <div>
-        <label for="favArtist">Who's your favorite music artist? </label><br>
+        <label for="favArtist">Name your favorite music artist!</label><br>
         <input type="text" name="favArtist" id="favArtist" required>
       </div>
 
+
       <div>
-        <input type="submit" value="submit" id="submit"/>
-        <input type="reset" value="reset" id="reset"/>
+        <input id="s" type="submit" value="Action!" />
+        <input id="r" type="reset" value="Cut!" />
       </div>
+
     </form>
   </section>
 
-  <!-- Madlib response here -->
+
   <section id="msgSection" class="hide">
-    <p id="myMsg"></p>
+    
+
+    <div class="film">
+      <div><img src="images/film.png" alt="film" style="width:60%" title="background film role">
+    <p id="myMsg"></p></div>
+    </div>
+
   </section>
+</main>
 
   <footer>
     <nav>
