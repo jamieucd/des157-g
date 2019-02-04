@@ -37,7 +37,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 footer {
-  background-color: rgb(234, 132, 117);
+  /* background-color: rgb(234, 132, 117); */
   position: fixed;
   padding: 4px;
   left: 0;
@@ -60,20 +60,12 @@ footer ul li a {
 }
 
 
-h2 a:link {
-  color: black;
-}
-
-h2 a:visited{
-  color: black;
-}
-
 footer a:link {
-  color: white;
+  color: black;
 }
 
 footer a:visited {
-  color: white;
+  color: black;
 }
 
 a:hover {
