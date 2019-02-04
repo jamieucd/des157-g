@@ -17,7 +17,7 @@ body {
 
 h2{
   font-family: avenir;
-  font-size: 30px;
+  font-size: 27px;
 }
 
 p {
@@ -59,13 +59,22 @@ footer ul li a {
   font-family: 'Sarabun', sans-serif;
 }
 
-a:link {
+
+h2 a:link {
+  color: black;
+}
+
+h2 a:visited{
+  color: black;
+}
+
+footer a:link {
   color: white;
 }
 
-/* a:visited {
-  color: black;
-} */
+footer a:visited {
+  color: white;
+}
 
 a:hover {
   color: pink;
