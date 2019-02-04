@@ -11,11 +11,11 @@ body {
 }
 
 a:link {
-  color: white;
+  color: Black
 }
 
 a:visited {
-  color: black;
+  color:black;
 }
 
 a:hover {
@@ -23,7 +23,7 @@ a:hover {
 }
 
 a:active {
-  color: black;
+  color: white;
 }
 
 a {
