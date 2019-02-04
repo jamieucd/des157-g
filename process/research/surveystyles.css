@@ -1,15 +1,14 @@
 body {
-  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   margin: auto;
   padding-left: 20vw;
-  padding-top: 90px;
+  padding-top: 30px;
   }
 
 .surveylogo {
   position:relative;
-  left:0px;
-  top:0px;
-    width: 40%;
+  width:40%;
   }
 
 h2 {
@@ -46,7 +45,7 @@ a {
 footer {
   background-color: rgb(234, 132, 117);
   position: fixed;
-  padding: 4px;
+  padding:4px;
   left: 0;
   bottom: 0;
   width: 100%;
