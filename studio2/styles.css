@@ -4,12 +4,12 @@ body {
 
 h1 {
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 3em;
   text-align: center;
-  padding-top: 1em;
 }
 
 /* mobile rule sets */
-section {
+main {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 10px;
@@ -17,7 +17,7 @@ section {
   max-width: 900px;
   margin: auto;
     grid-column-gap: 60px;
-  grid-row-gap: 15px;
+  grid-row-gap: 45px;
 }
 
 #openbook {
@@ -50,10 +50,99 @@ section {
 
 
 
+/*************overlay***************/
+#overopenbook {
+  background-color: rgba(244, 167, 66, .5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+display:none;
+}
+
+#overflask {
+  background-color: rgba(124, 129, 234, .5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+display:none;
+}
+
+#overhilight {
+  background-color: rgba(234, 228, 124, .5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+display:none;
+}
+
+#overbook {
+  background-color: rgba(255, 168, 215, .5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display:none;
+  text-align: center;
+}
+
+
+div p {
+  font-size: 2em;
+}
+
+
+
+/************foooter*************/
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  margin-top: 40px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  font-size: 90%;
+  font-family: 'Josefin Sans', sans-serif;
+  list-style-type: none;
+  text-align: center;
+  padding-left: 20px;
+}
+
+
 /* desktop view */
 @media only screen and (min-width: 769px) {
 
-  section {
+main {
     grid-template-columns: 1.4fr 2fr;
   }
 
@@ -69,55 +158,17 @@ section {
     visibility: visible;
     margin-left: auto;
     margin-right: auto;
+    transform: rotate(6deg)translate(40px);
   }
 
 #flask {
     grid-column: 2/3;
     grid-row: 1/2;
-
+    transform: rotate(10deg);
   }
 
   #hilight {
       grid-column: 2/3;
       grid-row: 2;
-
-    }
-
-    a:link {
-      color: white;
-    }
-
-    a:visited {
-      color: white;
-    }
-
-    a:hover {
-      color: pink;
-    }
-
-    a:active {
-      color: black;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    footer {
-      background-color: black;
-      position: fixed;
-      margin-top: 40px;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
-    }
-
-    footer ul li {
-      display: inline-block;
-      font-size: 17px;
-      font-family: 'Sarabun', sans-serif;
-      list-style-type: none;
-      text-align: center;
-      padding-left: 20px;
+      transform: rotate(-18deg);
     }
