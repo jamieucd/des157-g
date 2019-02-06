@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: pink;
+  background: rgb(252, 189, 181);
 }
 
 h1 {
@@ -8,37 +12,37 @@ h1 {
   text-align: center;
 }
 
-/* mobile rule sets */
+/*********** mobile rule sets ***********/
 main {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 10px;
   padding-top: 3em;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
     grid-column-gap: 60px;
-  grid-row-gap: 45px;
+  grid-row-gap: 60px;
 }
 
 #openbook {
   /* padding-left: 4em; */
   grid-column: 1;
-    grid-row: 1;
+    /* grid-row: 1; */
     margin-left: auto;
   margin-right: auto;
-  padding-left: 2em;
+  padding-left:1.5em;
 }
 
 #flask {
   grid-column: 1;
-    grid-row: 2;
+    /* grid-row: 2; */
     margin-left: auto;
   margin-right: auto;
 }
 
 #hilight {
   grid-column: 1;
-    grid-row: 3;
+    /* grid-row: 3; */
     margin-left: auto;
   margin-right: auto;
 }
@@ -47,8 +51,6 @@ main {
   visibility: hidden;
   grid-column: 1;
 }
-
-
 
 /*************overlay***************/
 #overopenbook {
@@ -122,7 +124,7 @@ a {
 
 footer {
   position: fixed;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   left: 0;
   bottom: 0;
   width: 100%;
@@ -139,7 +141,7 @@ footer ul li {
 }
 
 
-/* desktop view */
+/*********** desktop view **********/
 @media only screen and (min-width: 769px) {
 
 main {
