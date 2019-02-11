@@ -9,8 +9,8 @@ var book = document.querySelector('#book');
 
 var overopen = document.querySelector('#overopen');
 var overflask = document.querySelector('#overflask');
-var overhilight = document.querySelector('#overflask');
-var overbook = document.querySelector('#overflask');
+var overhilight = document.querySelector('#overhilight');
+var overbook = document.querySelector('#overbook');
 
 var closeopen = document.querySelector('#closeopen');
 var closeflask = document.querySelector('#closeflask');
