@@ -2,6 +2,7 @@ console.log('reading js')
 
 var zenItem = 0;
 var zenBox = document.querySelector('#sandbox');
+var reset = document.querySelector('#reset');
 
 
 // var resetAll=document.querySelector('#resetAll');
@@ -26,3 +27,7 @@ function drop(ev) {
   zenBox.appendChild(document.getElementById(data));
   zenItem++;
 }
+
+reset.addEventListener('click', function () {
+    window.location.reload();
+})
