@@ -1,6 +1,6 @@
 console.log('reading js')
 
-var box=document.querySelector('#sandbox');
+var rock1=document.querySelector('#sandbox');
 
 
 function allowDrop(ev) {
