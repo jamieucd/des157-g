@@ -18,10 +18,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80%;
-    width: 1200px;
+    width: 1250px;
     grid-row: 1;
     grid-column: 1;
-    margin: 5em;
+    margin: 4em;
+
   }
 
   #sandbox {
