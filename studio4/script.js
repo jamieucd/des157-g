@@ -3,7 +3,6 @@ console.log('reading js')
 var zenItem = 0;
 var zenBox = document.querySelector('#sandbox');
 
-var obj, x, y, prev_x, prev_y;
 
 // var resetAll=document.querySelector('#resetAll');
 
