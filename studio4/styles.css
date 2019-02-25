@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/***** reset button *****/
 
 #reset {
   grid-column: 1;
@@ -40,6 +41,7 @@
     overflow: hidden;
   }
 
+
   #box {
     background-image: url("images/zen-box-07.png");
     background-repeat: no-repeat;
@@ -56,6 +58,8 @@
     grid-row: 1;
     padding-top: 52px;
   }
+
+  /* draggable items  */
 
   #items {
     padding: 2em;
