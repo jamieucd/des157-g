@@ -29,11 +29,6 @@ function drop(ev) {
     return;
   }
 
-  function move(e) {
-    if (e.pageX) {
-      x = e.pageX;
-      y = e.pageY;
-    }
 
     if(obj) {
      obj.style.left = (x - prev_x) + 'px';
