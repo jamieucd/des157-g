@@ -2,15 +2,16 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   background-image: url("images/zenpage.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr ;
   grid-template-rows: 2fr .6fr .3fr;
-
 }
 
 #box{
@@ -18,13 +19,17 @@ background-image: url("images/zen-box-07.png");
 background-repeat: no-repeat;
 background-position: center;
 background-size: 80%;
+width:1200px;
 grid-row: 1;
 grid-column: 1;
+margin: 5em;
+
 }
 
 #sandbox{
-  padding-left:12px;
-  padding-top:15px;
+  grid-row: 1;
+  padding-top: 52px;
+
 }
 
 
@@ -37,6 +42,8 @@ grid-column: 1;
   padding-left: 2em;
     margin-left: 11em;
     margin-right: auto;
+    touch-action: none;
+      user-select: none;
 }
 
 #itemboxes img:hover {
