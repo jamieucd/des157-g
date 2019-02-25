@@ -47,7 +47,7 @@ function move(e) {
 }
 
 function drop() {
-  obj.style.background = '';
+  obj.style.background = '#sandbox';
   obj = false;
 }
 
