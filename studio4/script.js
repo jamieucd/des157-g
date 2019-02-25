@@ -14,12 +14,12 @@ function drag(ev) {
 function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
-  if (zenItems>=5){
+  if (zenItem>=5){
     // resetAll.style.display='block';
 
     return;
   }
 
   zenBox.appendChild(document.getElementById(data));
-  zenItems++;
+  zenItem++;
 }
