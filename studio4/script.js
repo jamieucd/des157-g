@@ -1,32 +1,32 @@
 console.log('reading js')
 
-// var zenItem = 0;
-// var zenBox = document.querySelector('#sandbox');
-//
-// function allowDrop(ev) {
-//   ev.preventDefault();
-// }
-//
-// function drag(ev) {
-//   ev.dataTransfer.setData("text", ev.target.id);
-// }
-//
-// function drop(ev) {
-//   ev.preventDefault();
-//   var data = ev.dataTransfer.getData("text");
-//   if (zenItem>=6){
-//     // resetAll.style.display='block';
-//
-//     return;
-//   }
-//
-//   zenBox.appendChild(document.getElementById(data));
-//   zenItem++;
-// }
+var zenItem = 0;
+var zenBox = document.querySelector('#sandbox');
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  if (zenItem>=6){
+    // resetAll.style.display='block';
+
+    return;
+  }
+
+  zenBox.appendChild(document.getElementById(data));
+  zenItem++;
+}
 
 
-var dragItem = document.quearySelector('#rock1');
-var container = document.querySelector('#sandbox');
+var dragZenItem = document.quearySelector('#tree');
+var zenBox = document.querySelector('#sandbox');
 
 var active = false;
  var currentX;
@@ -36,13 +36,13 @@ var active = false;
  var xOffset = 0;
  var yOffset = 0;
 
- container.addEventListener("touchstart", dragStart, false);
- container.addEventListener("touchend", dragEnd, false);
- container.addEventListener("touchmove", drag, false);
+ zenBox.addEventListener("touchstart", dragStart, false);
+ zenBox.addEventListener("touchend", dragEnd, false);
+ zenBox.addEventListener("touchmove", drag, false);
 
- container.addEventListener("mousedown", dragStart, false);
- container.addEventListener("mouseup", dragEnd, false);
- container.addEventListener("mousemove", drag, false);
+ zenBox.addEventListener("mousedown", dragStart, false);
+ zenBox.addEventListener("mouseup", dragEnd, false);
+ zenBox.addEventListener("mousemove", drag, false);
 
  function dragStart(e) {
    if (e.type === "touchstart") {
@@ -53,7 +53,7 @@ var active = false;
      initialY = e.clientY - yOffset;
    }
 
-   if (e.target === dragItem) {
+   if (e.target === dragZenItem) {
      active = true;
    }
  }
