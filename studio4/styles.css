@@ -3,26 +3,25 @@
 }
 
 body {
-  background-image: url("images/zenpage.png");
-  background-size: 1366px 768px;
+  background-image: url("images/zenpage-01.png");
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  /* display: grid;
+  display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr .6fr; */
-  margin: auto;
+  grid-template-rows: 2fr .6fr .3fr;
+
 }
 
-
-#box {
-  padding-top: 2em;
-  padding-left: 14rem;
-  grid-row: 1
+#sandbox{
+grid-row: 1;
+padding-left: 12px;
 }
 
 
 #items{
   padding: 2em;
+  grid-row: 2;
 }
 
 #itemboxes {
@@ -32,7 +31,7 @@ body {
 }
 
 #itemboxes img:hover {
-    transform: scale(1.0);
+    transform: scale(1.2);
 }
 
 
