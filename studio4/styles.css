@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/zenpage.png");
+  background-size: 1366px 768px;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr .6fr; */
+  margin: auto;
+}
+
+
+
+#box {
+  padding-top: 2em;
+  padding-left: 14rem;
+  grid-row: 1
+}
+
+#items{
+  padding: 2em;
+}
+
+#itemboxes {
+  padding-left: 2em;
+    margin-left: 11em;
+    margin-right: auto;
+}
+
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  /* margin-top: 40px; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  font-size: 90%;
+  font-family: 'Josefin Sans', sans-serif;
+  list-style-type: none;
+  text-align: center;
+  padding-left: 20px;
+}
