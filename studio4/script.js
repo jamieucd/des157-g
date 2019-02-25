@@ -1,21 +1,19 @@
 console.log('reading js')
 
-var box=document.querySelector('#sandbox');
-
-
-function allowDrop(ev) {
-  event.preventDefault();
-}
+var zenItem = 0;
+var zenBox = document.querySelector('#sandbox');
 
 
 function drag(ev) {
-  event.dataTransfer.setData("text", event.target.id);
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function allowDrop(ev) {
+  ev.preventDefault();
 }
 
 function drop(ev) {
-event.preventDefault()
-  var data = event.dataTransfer.getData("text");
-  event.target.appendChild(document.getElementById(data));
-
-  return;
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
 }
