@@ -2,90 +2,86 @@
   box-sizing: border-box;
 }
 
+@media only screen and (min-width: 769px) {
+  body {
+    background-image: url("images/zenpage.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr .6fr .3fr;
+    overflow: hidden;
+  }
 
+  #box {
+    background-image: url("images/zen-box-07.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    width: 1200px;
+    grid-row: 1;
+    grid-column: 1;
+    margin: 5em;
+  }
 
-body {
-  background-image: url("images/zenpage.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: grid;
-  grid-template-columns: 1fr ;
-  grid-template-rows: 2fr .6fr .3fr;
-  overflow: hidden;
-}
+  #sandbox {
+    grid-row: 1;
+    padding-top: 52px;
+  }
 
-#box{
-background-image: url("images/zen-box-07.png");
-background-repeat: no-repeat;
-background-position: center;
-background-size: 80%;
-width:1200px;
-grid-row: 1;
-grid-column: 1;
-margin: 5em;
+  #items {
+    padding: 2em;
+    grid-row: 2;
+  }
 
-}
-
-#sandbox{
-  grid-row: 1;
-  padding-top: 52px;
-
-}
-
-
-#items{
-  padding: 2em;
-  grid-row: 2;
-}
-
-#itemboxes {
-  padding-left: 2em;
+  #itemboxes {
+    padding-left: 2em;
     margin-left: 11em;
     margin-right: auto;
     touch-action: none;
-      user-select: none;
-}
+    user-select: none;
+  }
 
-#itemboxes img:hover {
+  #itemboxes img:hover {
     transform: scale(1.2);
-}
+  }
 
+  a:link {
+    color: black;
+  }
 
-a:link {
-  color: black;
-}
+  a:visited {
+    color: black;
+  }
 
-a:visited {
-  color: black;
-}
+  a:hover {
+    color: white;
+  }
 
-a:hover {
-  color: white;
-}
+  a:active {
+    color: black;
+  }
 
-a:active {
-  color: black;
-}
+  a {
+    text-decoration: none;
+  }
 
-a {
-  text-decoration: none;
-}
+  footer {
+    position: fixed;
+    /* margin-top: 40px; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
 
-footer {
-  position: fixed;
-  /* margin-top: 40px; */
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-
-footer ul li {
-  display: inline-block;
-  font-size: 90%;
-  font-family: 'Josefin Sans', sans-serif;
-  list-style-type: none;
-  text-align: center;
-  padding-left: 20px;
+  footer ul li {
+    display: inline-block;
+    font-size: 90%;
+    font-family: 'Josefin Sans', sans-serif;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 20px;
+  }
 }
