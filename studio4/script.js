@@ -1,10 +1,6 @@
 console.log('reading js')
 
-var rock1=document.querySelector("rock1");
-var rock2=document.querySelector("rock2");
-var bush=document.querySelector("bush");
-var tree=document.quearySelector("tree");
-var pagoda=document.quearySelector("pagoda");
+var box=document.querySelector('#sandbox');
 
 
 function allowDrop(ev) {
