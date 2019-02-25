@@ -1,7 +1,7 @@
 console.log('reading js')
 
 var zenItem = 0;
-var zenBox = document.querySelector('#box');
+var zenBox = document.querySelector('#sandbox');
 
 function allowDrop(ev) {
   ev.preventDefault();

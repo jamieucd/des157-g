@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url("images/zenpage-01.png");
+  background-image: url("images/zenpage.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -13,9 +13,18 @@ body {
 
 }
 
-#sandbox{
+#box{
+background-image: url("images/zen-box-07.png");
+background-repeat: no-repeat;
+background-position: center;
+background-size: 80%;
 grid-row: 1;
-padding-left: 12px;
+grid-column: 1;
+}
+
+#sandbox{
+  padding-left:12px;
+  padding-top:15px;
 }
 
 
