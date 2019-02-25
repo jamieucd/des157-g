@@ -1,10 +1,10 @@
 console.log('reading js')
 
-var rock1=document.querySelector('#sandbox');
+var box=document.querySelector('#sandbox');
 
 
 function allowDrop(ev) {
-  ev.preventDefault();
+  event.preventDefault();
 }
 
 
